@@ -1,1 +1,47 @@
-{"name":"taskflow-backend","version":"1.0.0","description":"TaskFlow Pro Backend API","main":"dist/index.js","scripts":{"dev":"nodemon --exec tsx src/index.ts","build":"tsc","start":"node dist/index.js","prisma:generate":"prisma generate","prisma:migrate":"prisma migrate dev","prisma:seed":"tsx prisma/seed.ts"},"dependencies":{"express":"^4.21.2","typescript":"^5.7.2","@types/node":"^22.10.2","@types/express":"^5.0.0","@prisma/client":"^6.1.0","jsonwebtoken":"^9.0.2","@types/jsonwebtoken":"^9.0.7","bcryptjs":"^2.4.3","@types/bcryptjs":"^2.4.6","cors":"^2.8.5","@types/cors":"^2.8.17","helmet":"^8.0.0","express-rate-limit":"^7.4.1","dotenv":"^16.4.7","zod":"^3.24.1","socket.io":"^4.8.1","uuid":"^11.0.3","@types/uuid":"^10.0.0","morgan":"^1.10.0","@types/morgan":"^1.9.9"},"devDependencies":{"prisma":"^6.1.0","tsx":"^4.19.2","nodemon":"^3.1.9"},"author":"Dhruv","license":"MIT"}
+{
+  "name": "taskflow-backend",
+  "version": "1.0.0",
+  "description": "TaskFlow Pro Backend API",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "nodemon --exec tsx src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "postinstall": "prisma generate",
+    "prisma:generate": "prisma generate",
+    "prisma:migrate": "prisma migrate dev",
+    "prisma:seed": "tsx prisma/seed.ts"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "typescript": "^5.7.2",
+    "@types/node": "^22.10.2",
+    "@types/express": "^5.0.0",
+    "@prisma/client": "^6.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "@types/jsonwebtoken": "^9.0.7",
+    "bcryptjs": "^2.4.3",
+    "@types/bcryptjs": "^2.4.6",
+    "cors": "^2.8.5",
+    "@types/cors": "^2.8.17",
+    "helmet": "^8.0.0",
+    "express-rate-limit": "^7.4.1",
+    "dotenv": "^16.4.7",
+    "zod": "^3.24.1",
+    "socket.io": "^4.8.1",
+    "uuid": "^11.0.3",
+    "@types/uuid": "^10.0.0",
+    "morgan": "^1.10.0",
+    "@types/morgan": "^1.9.9"
+  },
+  "devDependencies": {
+    "prisma": "^6.1.0",
+    "tsx": "^4.19.2",
+    "nodemon": "^3.1.9"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "author": "Dhruv",
+  "license": "MIT"
+}
